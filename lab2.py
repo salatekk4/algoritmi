@@ -10,7 +10,6 @@ edges = [
 n = 8  
 
 
-# 1. Алгоритм Прима 
 visited = [1]
 prim_tree = []
 prim_weight = 0
@@ -43,11 +42,10 @@ for u, v, w in prim_tree:
     print(f"Ребро ({u}, {v}) с весом {w}")
 
 
-# 2. Алгоритм Краскала 
 sorted_edges = sorted(edges, key=lambda x: x[2])
 
 group = {i: i for i in range(1, n + 1)}
-
+print(group)
 kruskal_tree = []
 kruskal_weight = 0
 
